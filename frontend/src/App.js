@@ -3,10 +3,12 @@ import { useState, useEffect } from "react";
 import KategoriaSelector from "./components/KategoriaSelector";
 import axios from "axios";
 import Kartya from "./components/Kartya";
+import { Typography } from "@mui/material";
 
 function App() {
   const [tesztek, setTesztek] = useState();
   const [kategoriak, setKategoriak] = useState();
+  const [joValaszok, setJoValaszok] = useState(0);
   const [selectedKategoria, setSelectedKategoria] = useState();
 
   const getTesztek = async () => {
@@ -40,10 +42,10 @@ function App() {
       />
       <div className="flex flex-col content-center items-center ">
         {tesztek.map((teszt) => {
-          console.log(teszt)
-          return <Kartya  key={teszt.id}teszt={teszt} />;
+          return <Kartya  key={teszt.id}teszt={teszt} setJoValaszok={setJoValaszok} joValaszok={joValaszok}/>;
         })}
       </div>
+      <Typography variant="h6">Jó válaszok: {joValaszok}</Typography>
     </div>
   );
 }
