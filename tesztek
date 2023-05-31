@@ -1,0 +1,51 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "tesztek",
+    "dateExported": "2023-05-31T10:07:25.037Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "5864e56d-bb87-4e2b-a061-2e44347628f9",
+            "colId": "c887cdc1-9813-412c-a606-84b953a5672b",
+            "containerId": "",
+            "name": "kategoriaAll",
+            "url": "http://127.0.0.1:8000/kategoria",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-05-31T10:06:44.440Z",
+            "modified": "2023-05-31T10:06:44.440Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "1fc1b943-1bbf-45e6-84d5-d11a0b598452",
+            "colId": "c887cdc1-9813-412c-a606-84b953a5672b",
+            "containerId": "",
+            "name": "tesztBykategoria",
+            "url": "http://127.0.0.1:8000/tesztek/kategoria/1",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-05-31T10:07:09.322Z",
+            "modified": "2023-05-31T10:07:09.322Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "4bda81b9-1039-4011-a39c-f60e0997ab12",
+            "colId": "c887cdc1-9813-412c-a606-84b953a5672b",
+            "containerId": "",
+            "name": "osszesTeszt",
+            "url": "http://127.0.0.1:8000/tesztek",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-05-31T10:07:16.781Z",
+            "modified": "2023-05-31T10:07:16.781Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
